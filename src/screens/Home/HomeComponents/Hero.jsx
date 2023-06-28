@@ -9,7 +9,7 @@ const Hero = () => {
     className="w-full h-screen m-0 p-0 box-border"
     >
       <img
-        className="top-0 left-0 w-full h-full object-cover object-fixed"
+        className="top-0 left-0 w-full h-full object-cover"
         src="images/projectThree.jpg"
         alt="hero-image"
       />
@@ -28,7 +28,7 @@ const Hero = () => {
           <h1 className="mb-5 font-extrabold text-2xl  md:text-orange-600 text-transparent">
             Vatise Company
           </h1>
-          <h1 className="mb-5 font-extrabold md:text-5xl text-3xl drop-shadow-2xl">
+          <h1 className="mb-5 py-2 font-extrabold md:text-5xl text-3xl drop-shadow-2xl">
             Making Dreams Come True.
           </h1>
 
