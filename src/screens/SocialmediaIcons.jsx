@@ -3,11 +3,9 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaTwitter,
-  FaWhatsapp,
 } from "react-icons/fa";
-import { AiFillInstagram, AiOutlineMail } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
 import { RiWhatsappFill } from "react-icons/ri";
-import { IoMdMail } from "react-icons/io";
 
 const SocialmediaIcons = () => {
   return (
@@ -22,7 +20,7 @@ const SocialmediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500 "
-        href="https://facebook.com/vatiseconstruction"
+        href="https://www.facebook.com/profile.php?id=100094162569462"
         target="_blank"
         rel="noreferrer"
       >
@@ -30,7 +28,7 @@ const SocialmediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500 "
-        href="https://facebook.com/vatiseconstruction"
+        href="https://www.linkedin.com/company/vatise-enterprise-limited/"
         target="_blank"
         rel="noreferrer"
       >
