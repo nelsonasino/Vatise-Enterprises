@@ -6,6 +6,7 @@ const team = [
   { name: "Victor Njoroge", designation: "Accountant", experience: "5 yrs" },
   { name: "Paul Kiarie", designation: "Engineer", experience: "4 yrs" },
   { name: "Daniel Kilonzo", designation: "Administrator", experience: "2 yrs" },
+  { name: "Wilson Muindi", designation: "Marketing Director", experience: "2 yrs" },
 ];
 
 const Team = () => {
