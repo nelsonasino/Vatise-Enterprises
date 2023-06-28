@@ -14,7 +14,7 @@ const projectVariant = {
 };
 
 const Project = ({ title, subtitle }) => {
-  const overlayStyles = `absolute md:h-[80vh] h-[60vh] md:w-full w-[90%] p-10 opacity-0 hover:opacity-90 
+  const overlayStyles = `absolute md:h-[80vh] h-[60vh] md:w-full w-[100%] p-10 opacity-0 hover:opacity-90 
    transition duration-700 bg-gray-400 z-30 flex flex-col justify-center items-center text-center text-black`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
@@ -26,7 +26,7 @@ const Project = ({ title, subtitle }) => {
       </div>
 
       <img
-        className="md:h-[80vh] h-[60vh] md:w-full w-[90%] object-cover"
+        className="md:h-[80vh] h-[60vh] md:w-full w-[100%] object-cover"
         src={`/images/${projectTitle}.jpg`}
         alt={projectTitle}
       />
@@ -37,7 +37,7 @@ const Project = ({ title, subtitle }) => {
 const ProjectsScreen = () => {
   return (
     <div className="bg-slate-800 md:p-16 p-10 text-white font-poppins flex flex-col items-center justify-center">
-      <h1 className="md:mt-16 md:font-extrabold font-bold md:text-4xl text-3xl md:mb-16 mb-0">
+      <h1 className="md:mt-16 mt-10 md:font-extrabold font-bold md:text-4xl text-3xl md:mb-16 mb-0">
         Recent Projects
       </h1>
 
