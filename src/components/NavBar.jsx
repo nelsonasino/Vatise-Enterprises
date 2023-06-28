@@ -60,7 +60,7 @@ const NavBar = ({ isTopOfPage }) => {
 
       {/* MOILE MENU POUP */}
       {!isAboveSmallScreen && isMenuToggled && (
-        <div className="fixed right-0 bottom-0 h-full bg-black/90 w-[90%]">
+        <div className="fixed right-0 bottom-0 h-full bg-black/90 w-[80%]">
           <div className="flex justify-end p-10">
             {/**Close btn */}
             <motion.button
