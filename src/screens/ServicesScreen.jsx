@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 const ServicesScreen = () => {
   return (
-    <div className="bg-slate-800 md:p-16 p-10  text-white font-poppins ">
+    <div className="bg-slate-800 md:p-16 p-7  text-white font-poppins ">
       <h1 className="mt-16 text-center font-extrabold md:text-4xl text-3xl md:mb-16 mb-0">
         Our Services
       </h1>
 
       <div
-        className="max-w-[1400px] h-[50%] bg-slate-900 mx-auto my-20 md:pt-16 pt-10 lg:mb-[20%] md:mb-[5%]
-       md:text-center px-4 grid lg:grid-cols-2 "
+        className="w-full h-[50%] bg-slate-900 mx-auto my-20 md:pt-16 pt-10 lg:mb-[20%] md:mb-[5%]
+       md:text-center px-2 grid lg:grid-cols-2 "
       >
         <motion.div
           initial="hidden"
@@ -60,8 +60,8 @@ const ServicesScreen = () => {
       </div>
 
       <div
-        className="max-w-[1400px] h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
-       md:text-center px-4 grid lg:grid-cols-2 "
+        className="w-full h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
+       md:text-center px-2 grid lg:grid-cols-2 "
       >
         <motion.div
           initial="hidden"
@@ -109,8 +109,8 @@ const ServicesScreen = () => {
         </motion.div>
       </div>
       <div
-        className="max-w-[1400px] h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
-       md:text-center px-4 grid lg:grid-cols-2 object-contain"
+        className="w-full h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
+       md:text-center px-2 grid lg:grid-cols-2 object-contain"
       >
         <motion.div
           initial="hidden"
@@ -162,8 +162,8 @@ const ServicesScreen = () => {
         </motion.div>
       </div>
       <div
-        className="max-w-[1400px] h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
-       md:text-center px-4 grid lg:grid-cols-2 "
+        className="w-full h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
+       md:text-center px-2 grid lg:grid-cols-2 "
       >
         <motion.div
           initial="hidden"
@@ -207,8 +207,8 @@ const ServicesScreen = () => {
         </motion.div>
       </div>
       <div
-        className="max-w-[1400px] h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
-       md:text-center px-4 grid lg:grid-cols-2 "
+        className="w-full h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
+       md:text-center px-2 grid lg:grid-cols-2 "
       >
         <motion.div
           initial="hidden"
