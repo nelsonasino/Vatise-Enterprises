@@ -36,8 +36,8 @@ const Project = ({ title, subtitle }) => {
 
 const ProjectsScreen = () => {
   return (
-    <div className="bg-slate-800 md:p-16 p-10 text-white font-poppins flex flex-col items-center justify-center">
-      <h1 className="md:mt-16 mt-10 md:font-extrabold font-bold md:text-4xl text-3xl md:mb-16 mb-0">
+    <div className="bg-slate-800 md:p-16 p-7 text-white font-poppins flex flex-col items-center justify-center">
+      <h1 className="mt-16 md:font-extrabold font-bold md:text-4xl text-3xl md:mb-16 mb-0">
         Recent Projects
       </h1>
 
