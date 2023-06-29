@@ -2,11 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const team = [
-  { name: "Eng. Danson Mutiso", designation: "Director", experience: "4 yrs" },
-  { name: "Victor Njoroge", designation: "Accountant", experience: "5 yrs" },
-  { name: "Paul Kiarie", designation: "Engineer", experience: "4 yrs" },
-  { name: "Daniel Kilonzo", designation: "Administrator", experience: "2 yrs" },
-  { name: "Wilson Muindi", designation: "Marketing Director", experience: "2 yrs" },
+  { url: "/images/danson-mutiso.jpg", name: "Eng. Danson Mutiso", designation: "Director", experience: "4 yrs" },
+  { url: "/images/daniel-kilonzo.jpg", name: "Victor Njoroge", designation: "Accountant", experience: "5 yrs" },
+  { url: "/images/kaire.jpg", name: "Paul Kiarie", designation: "Engineer", experience: "4 yrs" },
+  { url: "/images/daniel-kilonzo.jpg", name: "Daniel Kilonzo", designation: "Administrator", experience: "2 yrs" },
+  { url: "/images/danson-mutiso.jpg", name: "Wilson Muindi", designation: "Marketing Director", experience: "2 yrs" },
 ];
 
 const Team = () => {
@@ -33,7 +33,7 @@ const Team = () => {
         {team.map((member) => {
           return (
             <motion.div
-              className="md:w-[20%] w-[70%] md:h-[30vh] h-[50vh] bg-slate-500/20 rounded-2xl flex flex-col items-center justify-center"
+              className="md:w-[20%] w-[70%] h-[50vh] bg-slate-500/20 rounded-2xl overflow-hidden flex flex-col items-center"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
@@ -43,7 +43,8 @@ const Team = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <h1 className="text-md mb-1">{member.name}</h1>
+              <img className="w-[100%] h-[70%] top-0" src={member.url} alt={member.name} />
+              <h1 className="text-md mb-1 mt-2">{member.name}</h1>
               <p className="text-gray-400 mb-1">{member.designation}</p>
               <p className="text-sm">Experience: {member.experience}</p>
             </motion.div>
