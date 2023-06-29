@@ -3,10 +3,7 @@ import { motion } from "framer-motion";
 
 const team = [
   { url: "/images/danson-mutiso.jpg", name: "Eng. Danson Mutiso", designation: "Director", experience: "4 yrs" },
-  { url: "/images/daniel-kilonzo.jpg", name: "Victor Njoroge", designation: "Accountant", experience: "5 yrs" },
-  { url: "/images/kaire.jpg", name: "Paul Kiarie", designation: "Engineer", experience: "4 yrs" },
-  { url: "/images/daniel-kilonzo.jpg", name: "Daniel Kilonzo", designation: "Administrator", experience: "2 yrs" },
-  { url: "/images/danson-mutiso.jpg", name: "Wilson Muindi", designation: "Marketing Director", experience: "2 yrs" },
+  { url: "/images/kaire.jpg", name: "Paul Kiarie", designation: "Engineer", experience: "4 yrs" }
 ];
 
 const Team = () => {

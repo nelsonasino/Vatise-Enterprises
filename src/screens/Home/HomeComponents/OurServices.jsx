@@ -18,7 +18,7 @@ const OurServices = () => {
       >
         <h1 className="font-bold md:text-4xl text-3xl mb-4">What we do</h1>
         <p>
-          We provide cost effective, world-class serices and equioment to
+          We provide cost effective, world-class serices and equipment to
           enhance and contribute to the development of Kenya's infrastructure.
           Vatise Enterprises deliver a massive range of services within water
           treatment solutions management, civil engineering, earthworks,

@@ -35,7 +35,7 @@ const AboutUs = () => {
           quality work in General Supplies and General Works
           Construction services. We take on the role of main contractor for
           small to medium size projects and perform project management services
-          to coordinates specialist trades for commercial projects in different
+          to cordinate specialist trades for commercial projects in different
           disciplines.
         </p>
         <Link
