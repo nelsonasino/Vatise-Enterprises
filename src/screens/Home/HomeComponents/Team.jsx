@@ -44,7 +44,7 @@ const Team = () => {
               }}
             >
               <img className="w-[100%] h-[70%] top-0" src={member.url} alt={member.name} />
-              <h1 className="text-md mb-1 mt-2">{member.name}</h1>
+              <h1 className="text-md mb-1 mt-4">{member.name}</h1>
               <p className="text-gray-400 mb-1">{member.designation}</p>
               <p className="text-sm">Experience: {member.experience}</p>
             </motion.div>

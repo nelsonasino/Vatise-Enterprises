@@ -14,7 +14,7 @@ const Hero = () => {
         alt="hero-image"
       />
       <div className="bg-black/50 absolute top-0 left-0 w-full h-screen" />
-      <div className="absolute top-0 w-full h-screen flex flex-col justify-center  items-center text-center">
+      <div className="absolute top-0 w-full h-screen flex flex-col justify-center items-center text-center">
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -25,7 +25,7 @@ const Hero = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-          <h1 className="mb-5 font-extrabold text-2xl  md:text-orange-600 text-transparent">
+          <h1 className="md:mb-5 mb-4 md:font-extrabold font-bold md:text-2xl text-lg text-orange-600">
             Vatise Company
           </h1>
           <h1 className="mb-5 py-2 font-extrabold md:text-5xl text-3xl drop-shadow-2xl">
