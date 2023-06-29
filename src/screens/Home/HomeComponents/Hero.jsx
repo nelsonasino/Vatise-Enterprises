@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div 
-    className="w-full h-screen m-0 p-0 box-border"
+    className="w-full h-screen m-0 p-0 box-border overflow-x-hidden"
     >
       <img
         className="top-0 left-0 w-full h-full object-cover"

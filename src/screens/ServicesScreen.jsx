@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const ServicesScreen = () => {
   return (
-    <div className="bg-slate-800 md:p-16 p-4  text-white font-poppins ">
+    <div className="bg-slate-800 md:p-16 p-4  text-white font-poppins overflow-x-hidden">
       <h1 className="mt-16 text-center font-extrabold md:text-4xl text-3xl md:mb-16 mb-0">
         Our Services
       </h1>
