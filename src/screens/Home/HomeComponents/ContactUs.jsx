@@ -61,7 +61,7 @@ const ContactUs = () => {
                 <CiMail size={24} />
                 <a
                   className="mx-4 hover:opacity-50 transition duration-500 "
-                  href="https://gmail.com/Vatiseconstruction"
+                  href="mailto:Vatiseconstruction@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
