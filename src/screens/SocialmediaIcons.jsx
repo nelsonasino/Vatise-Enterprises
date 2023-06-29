@@ -9,7 +9,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 const SocialmediaIcons = () => {
   return (
-    <div className="flex gap-5 cursor-pointer">
+    <div className="flex gap-5">
       <a
         className="hover:opacity-50 transition duration-500 "
         href="https://twitter.com/vatiseconstruction"

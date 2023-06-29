@@ -24,8 +24,8 @@ const Footer = () => {
             <Link to="/projects" className="hover:text-orange-500"> Projects</Link>
             <Link to="/contactus" className="hover:text-orange-500"> Get in Touch</Link>    
         </div>
-        <div className="flex flex-col items-center justify-center">
-            <p className="mb-4">Let's Connect</p>
+        <div className="flex flex-col items-center justify-center md:pb-0 pb-4 ">
+            <p className="md:mb-4 mb-3">Let's Connect</p>
             <SocialmediaIcons/>
         </div>
       </motion.div>

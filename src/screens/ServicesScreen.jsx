@@ -10,7 +10,7 @@ const ServicesScreen = () => {
 
       <div
         className="w-full h-[50%] bg-slate-900 mx-auto my-20 md:pt-16 pt-10 lg:mb-[20%] md:mb-[5%]
-       md:text-center px-2 grid lg:grid-cols-2 box-border"
+       md:text-center px-2 grid lg:grid-cols-2"
       >
         <motion.div
           initial="hidden"
@@ -61,7 +61,7 @@ const ServicesScreen = () => {
 
       <div
         className="w-full h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
-       md:text-center px-2 grid lg:grid-cols-2 box-border "
+       md:text-center px-2 grid lg:grid-cols-2"
       >
         <motion.div
           initial="hidden"
@@ -110,7 +110,7 @@ const ServicesScreen = () => {
       </div>
       <div
         className="w-full h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
-       md:text-center px-2 grid lg:grid-cols-2 object-contain box-border"
+       md:text-center px-2 grid lg:grid-cols-2 object-contain"
       >
         <motion.div
           initial="hidden"
@@ -163,7 +163,7 @@ const ServicesScreen = () => {
       </div>
       <div
         className="w-full h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
-       md:text-center px-2 grid lg:grid-cols-2 box-border"
+       md:text-center px-2 grid lg:grid-cols-2"
       >
         <motion.div
           initial="hidden"
@@ -208,7 +208,7 @@ const ServicesScreen = () => {
       </div>
       <div
         className="w-full h-[50%] bg-slate-900 mx-auto my-20 pt-16 lg:mb-[20%] md:mb-[35%]
-       md:text-center px-2 grid lg:grid-cols-2 box-border"
+       md:text-center px-2 grid lg:grid-cols-2"
       >
         <motion.div
           initial="hidden"

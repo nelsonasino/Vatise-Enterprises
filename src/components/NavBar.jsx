@@ -54,14 +54,14 @@ const NavBar = ({ isTopOfPage }) => {
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsMenuToggled(!isMenuToggled)}
         >
-          <FaBars size={24} />
+          {!isAboveSmallScreen && isMenuToggled ? (<FaTimes size={24}/>):(<FaBars size={24} />) } 
         </motion.button>
       )}
 
       {/* MOILE MENU POUP */}
       {!isAboveSmallScreen && isMenuToggled && (
         <div className="fixed right-0 bottom-0 h-full bg-black/90 w-[80%]">
-          <div className="flex justify-end p-10">
+          <div className="flex justify-end px-7 py-2">
             {/**Close btn */}
             <motion.button
               alt="menu"
@@ -69,11 +69,11 @@ const NavBar = ({ isTopOfPage }) => {
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
-              <FaTimes size={24} />
+            {!isAboveSmallScreen && isMenuToggled ? (<FaTimes size={24}/>):(<FaBars size={24} />) }    
             </motion.button>
           </div> 
           <motion.div
-            className="flex flex-col items-center justify-center gap-10 text-xl text-gray-300"
+            className="flex flex-col items-center justify-center gap-10 text-xl text-gray-300 py-20"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
@@ -83,7 +83,7 @@ const NavBar = ({ isTopOfPage }) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <Link to="/" className="hover:text-orange-500 ml-5">
+            <Link to="/" className="hover:text-orange-500 ml-7">
               {" "}
               Home
             </Link>
