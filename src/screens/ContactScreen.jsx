@@ -49,11 +49,11 @@ const ContactScreen = () => {
                 <CiMail size={24} />
                 <a
                   className="mx-4 hover:opacity-50 transition duration-500 "
-                  href="mailto:Vatiseconstruction@gmail.com"
+                  href="mailto:vatiseconstruction@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Vatiseconstruction@gmail.com
+                  vatiseconstruction@gmail.com
                 </a>
               </div>
 
@@ -80,7 +80,7 @@ const ContactScreen = () => {
           }}
         >
           <form
-            action="https://formsubmit.co/Vatiseconstruction@gmail.com"
+            action="https://formsubmit.co/vatiseconstruction@gmail.com"
             onSubmit={onSubmit}
             target="_blank"
             method="POST"

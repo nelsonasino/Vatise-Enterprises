@@ -8,6 +8,8 @@ import ProjectsScreen from "./screens/ProjectsScreen";
 import ServicesScreen from "./screens/ServicesScreen";
 import Footer from "./components/Footer";
 import ContactScreen from "./screens/ContactScreen";
+import Mansionette from "./screens/Mansionette";
+import Bungalow from "./screens/Bungalow";
 
 function App() {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -29,6 +31,8 @@ function App() {
         <Route path="/about" element={<AboutScreen />} />
         <Route path="/services" element={<ServicesScreen />} />
         <Route path="/projects" element={<ProjectsScreen />} />
+        <Route path="/mansionette" element={<Mansionette />} />
+        <Route path="/bungalow" element={<Bungalow />} />
         <Route path="/contactus" element={<ContactScreen />} />
       </Routes>
       <Footer />

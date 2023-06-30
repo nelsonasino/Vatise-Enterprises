@@ -14,7 +14,7 @@ const projectVariant = {
 };
 
 const Project = ({ title, subtitle }) => {
-  const overlayStyles = `absolute md:h-[80vh] h-[60vh] md:w-full w-[100%] p-10 opacity-0 hover:opacity-90 
+  const overlayStyles = `absolute md:h-[70vh] h-[60vh] md:w-full w-[100%] p-10 opacity-0 hover:opacity-90 
    transition duration-700 bg-gray-400 z-30 flex flex-col justify-center items-center text-center text-black`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
@@ -26,7 +26,7 @@ const Project = ({ title, subtitle }) => {
       </div>
 
       <img
-        className="md:h-[80vh] h-[60vh] md:w-full w-[100%] object-cover"
+        className="md:h-[70vh] h-[60vh] md:w-full w-[100%] object-cover"
         src={`/images/${projectTitle}.jpg`}
         alt={projectTitle}
       />
@@ -49,7 +49,7 @@ const ProjectsScreen = () => {
       {/**Projects */}
       <div className="flex justify-center items-center">
         <motion.div
-          className="grid md:grid-cols-2 gap-1"
+          className="grid md:grid-cols-3 gap-1"
           initial="hidden"
           whileInView="visible"
           variants={container}
@@ -63,22 +63,34 @@ const ProjectsScreen = () => {
             title="Project 2"
             subtitle="This is a home construction fully planned, designed and managed with Vatise Company."
           />
-          {/**Row 2 */}
           <Project
             title="Project 3"
             subtitle="This is an apartment design as per customer requirements."
           />
+          {/**Row 2 */}
           <Project
             title="Project 4"
             subtitle="This is another home construction fully planned, designed and managed with Vatise Company till completion."
           />
-          {/**Row 3 */}
           <Project
             title="Project 5"
             subtitle="Fully complete home construction planned, designed and managed with Vatise."
           />
           <Project
             title="Project 6"
+            subtitle="This is a mansion design for a real esate customer."
+          />
+          {/**Row 3 */}
+          <Project
+            title="Project 7"
+            subtitle="This is another home construction fully planned, designed and managed with Vatise Company till completion."
+          />
+          <Project
+            title="Project 8"
+            subtitle="Fully complete home construction planned, designed and managed with Vatise."
+          />
+          <Project
+            title="Project 9"
             subtitle="This is a mansion design for a real esate customer."
           />
         </motion.div>

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes, FaBars } from "react-icons/fa";
+import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
+import { Menu, Transition } from "@headlessui/react";
 
 const NavBar = ({ isTopOfPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
@@ -39,6 +41,69 @@ const NavBar = ({ isTopOfPage }) => {
             {" "}
             Projects
           </Link>
+          <Menu as="div" className="relative">
+            {({ open }) => (
+              <Fragment>
+                {/**Menu Button */}
+                <Menu.Button className="hover:text-orange-500 inline-flex items-center justify-center">
+                  Concepts
+                  <BiChevronDown size={24} className="ml-[1px]" />
+                </Menu.Button>
+
+                {/**Menu Items */}
+                <Transition
+                  show={open}
+                  enter="transform transition duration-200 ease-in"
+                  enterFrom="transform opacity-0 scale-95"
+                  enterTo="transform opacity-100 scale-100"
+                  leave="transform transition duration-200 ease-out"
+                  leaveFrom="transform opacity-100 scale-100"
+                  leaveTo="transform opacity-0 scale-95"
+                >
+                  <Menu.Items
+                    className="w-48 rounded-md right-0 mt-2 divide-y shadow-lg bg-white origin-top-right focus:outline-none absolute"
+                    static
+                  >
+                    <div className="p-2 flex flex-col items-start justify-center gap-1">
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            to="/bungalow"
+                            aria-hidden="true"
+                            className={` w-full rounded-md py-2 ${
+                              active
+                                ? "bg-gray-100/70 text-slate-500 "
+                                : "text-red-400"
+                            } flex items-center justify-center`}
+                          >
+                            {" "}
+                            Bungalow
+                          </Link>
+                        )}
+                      </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            to="/mansionette"
+                            aria-hidden="true"
+                            className={` w-full rounded-md py-2 ${
+                              active
+                                ? "bg-gray-100/70 text-slate-500 "
+                                : "text-red-400"
+                            } flex items-center justify-center`}
+                          >
+                            {" "}
+                            Mansionette
+                          </Link>
+                        )}
+                      </Menu.Item>
+                    </div>
+                  </Menu.Items>
+                </Transition>
+              </Fragment>
+            )}
+          </Menu>
+
           <Link
             to="/contactus"
             className="bg-orange-500 hover:bg-orange-500/90 font-medium py-2 px-4 rounded-sm"
@@ -54,7 +119,11 @@ const NavBar = ({ isTopOfPage }) => {
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsMenuToggled(!isMenuToggled)}
         >
-          {!isAboveSmallScreen && isMenuToggled ? (<FaTimes size={24}/>):(<FaBars size={24} />) } 
+          {!isAboveSmallScreen && isMenuToggled ? (
+            <FaTimes size={24} />
+          ) : (
+            <FaBars size={24} />
+          )}
         </motion.button>
       )}
 
@@ -69,9 +138,13 @@ const NavBar = ({ isTopOfPage }) => {
               whileTap={{ scale: 0.9 }}
               onClick={() => setIsMenuToggled(!isMenuToggled)}
             >
-            {!isAboveSmallScreen && isMenuToggled ? (<FaTimes size={24}/>):(<FaBars size={24} />) }    
+              {!isAboveSmallScreen && isMenuToggled ? (
+                <FaTimes size={24} />
+              ) : (
+                <FaBars size={24} />
+              )}
             </motion.button>
-          </div> 
+          </div>
           <motion.div
             className="flex flex-col items-center justify-center gap-10 text-xl text-gray-300 py-20"
             initial="hidden"
@@ -83,25 +156,87 @@ const NavBar = ({ isTopOfPage }) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <Link to="/" className="hover:text-orange-500 ml-7">
+            <Link to="/" className="hover:text-orange-500">
               {" "}
               Home
             </Link>
-            <Link to="/about" className="hover:text-orange-500 ml-7">
+            <Link to="/about" className="hover:text-orange-500">
               {" "}
               About
             </Link>
-            <Link to="/services" className="hover:text-orange-500 ml-7">
+            <Link to="/services" className="hover:text-orange-500">
               {" "}
               Services
             </Link>
-            <Link to="/projects" className="hover:text-orange-500 ml-7">
+            <Link to="/projects" className="hover:text-orange-500">
               {" "}
               Projects
             </Link>
+            <Menu as="div" className="relative">
+              {({ open }) => (
+                <Fragment>
+                  {/**Menu Button */}
+                  <Menu.Button className="hover:text-orange-500 inline-flex items-center justify-center">
+                    Concepts
+                    <BiChevronDown size={24} className="ml-[1px]" />
+                  </Menu.Button>
+
+                  {/**Menu Items */}
+                  <Transition
+                    show={open}
+                    enter="transform transition duration-100 ease-in"
+                    enterFrom="opacity-0 scale-95"
+                    enterTo="opacity-100 scale-100"
+                    leave="transform transition duration-75 ease-out"
+                    leaveFrom="opacity-100 scale-100"
+                    leaveTo="opacity-0 scale-95"
+                  >
+                    <Menu.Items
+                      className="w-40 rounded-md shadow-lg bg-white origin-top-right focus:outline-none absolute"
+                      static
+                    >
+                      <div className="p-2 flex flex-col text-sm items-start justify-center gap-1">
+                        <Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              to="/bungalow"
+                              aria-hidden="true"
+                              className={` w-full rounded-md py-2 ${
+                                active
+                                  ? "bg-gray-100/70 text-slate-500 "
+                                  : "text-red-400"
+                              } flex items-center justify-center`}
+                            >
+                              {" "}
+                              Bungalow
+                            </Link>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              to="/mansionette"
+                              aria-hidden="true"
+                              className={` w-full rounded-md py-2 ${
+                                active
+                                  ? "bg-gray-100/70 text-slate-500 "
+                                  : "text-red-400"
+                              } flex items-center justify-center`}
+                            >
+                              {" "}
+                              Mansionette
+                            </Link>
+                          )}
+                        </Menu.Item>
+                      </div>
+                    </Menu.Items>
+                  </Transition>
+                </Fragment>
+              )}
+            </Menu>
             <Link
               to="/contactus"
-              className="bg-orange-500 hover:bg-orange-500/80 font-medium py-2 px-4 rounded-sm ml-7"
+              className="bg-orange-500 hover:bg-orange-500/80 font-medium py-2 px-4 rounded-sm mt-20"
             >
               {" "}
               Get in Touch

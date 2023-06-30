@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const team = [
   { url: "/images/danson-mutiso.jpg", name: "Eng. Danson Mutiso", designation: "Director", experience: "4 yrs" },
-  { url: "/images/kaire.jpg", name: "Paul Kiarie", designation: "Engineer", experience: "4 yrs" }
+  { url: "/images/paul.jpg", name: "Paul Kiarie", designation: "Engineer", experience: "4 yrs" }
 ];
 
 const Team = () => {
@@ -25,12 +25,12 @@ const Team = () => {
       </motion.div>
 
       <div
-        className="flex md:flex-row flex-col justify-center items-center py-10 md:gap-4 gap-6"
+        className="flex md:flex-row flex-col justify-center items-center py-10 md:gap-7 gap-6"
       >
         {team.map((member) => {
           return (
             <motion.div
-              className="md:w-[20%] w-[70%] h-[50vh] bg-slate-500/20 rounded-2xl overflow-hidden flex flex-col items-center"
+              className="md:w-[20%] w-[70%] h-[50vh] bg-slate-500/20 rounded-lg overflow-hidden flex flex-col items-center"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
