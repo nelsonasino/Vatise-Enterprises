@@ -10,7 +10,7 @@ const Bungalow = () => {
         <p>1 bedroom</p>
       </div>
 
-      <div className="w-full mb-8 grid md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 md:gap-9 gap-5">
+      <div className="w-full mb-8 grid md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5">
         <div className="bg-black/30 overflow-hidden row-span-1 md:col-span-1 col-span-2 w-full h-[30vh] rounded-md flex items-center justify-center">
           <img
             className="w-full h-full"
