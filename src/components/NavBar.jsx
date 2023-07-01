@@ -97,6 +97,22 @@ const NavBar = ({ isTopOfPage }) => {
                           </Link>
                         )}
                       </Menu.Item>
+                      <Menu.Item>
+                        {({ active }) => (
+                          <Link
+                            to="/mansionette"
+                            aria-hidden="true"
+                            className={` w-full rounded-md py-2 ${
+                              active
+                                ? "bg-gray-100/70 text-slate-500 "
+                                : "text-red-400"
+                            } flex items-center justify-center`}
+                          >
+                            {" "}
+                            Villa
+                          </Link>
+                        )}
+                      </Menu.Item>
                     </div>
                   </Menu.Items>
                 </Transition>
