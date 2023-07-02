@@ -196,7 +196,6 @@ const NavBar = ({ isTopOfPage }) => {
                 <Fragment>
                   {/**Menu Button */}
                   <Menu.Button
-                    onMouseEnter={({ target }) => (open ? "" : target.click())}
                     className="hover:text-orange-500 inline-flex items-center justify-center"
                   >
                     Concepts
