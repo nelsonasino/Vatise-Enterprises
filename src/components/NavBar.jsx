@@ -45,7 +45,10 @@ const NavBar = ({ isTopOfPage }) => {
             {({ open }) => (
               <Fragment>
                 {/**Menu Button */}
-                <Menu.Button className="hover:text-orange-500 inline-flex items-center justify-center">
+                <Menu.Button
+                  onMouseEnter={({ target }) => (open ? "" : target.click())}
+                  className={`hover:text-orange-500 inline-flex items-center justify-center`}
+                >
                   Concepts
                   <BiChevronDown size={24} className="ml-[1px]" />
                 </Menu.Button>
@@ -100,7 +103,7 @@ const NavBar = ({ isTopOfPage }) => {
                       <Menu.Item>
                         {({ active }) => (
                           <Link
-                            to="/mansionette"
+                            to="/villa"
                             aria-hidden="true"
                             className={` w-full rounded-md py-2 ${
                               active
@@ -192,7 +195,10 @@ const NavBar = ({ isTopOfPage }) => {
               {({ open }) => (
                 <Fragment>
                   {/**Menu Button */}
-                  <Menu.Button className="hover:text-orange-500 inline-flex items-center justify-center">
+                  <Menu.Button
+                    onMouseEnter={({ target }) => (open ? "" : target.click())}
+                    className="hover:text-orange-500 inline-flex items-center justify-center"
+                  >
                     Concepts
                     <BiChevronDown size={24} className="ml-[1px]" />
                   </Menu.Button>
@@ -245,21 +251,21 @@ const NavBar = ({ isTopOfPage }) => {
                           )}
                         </Menu.Item>
                         <Menu.Item>
-                        {({ active }) => (
-                          <Link
-                            to="/mansionette"
-                            aria-hidden="true"
-                            className={` w-full rounded-md py-2 ${
-                              active
-                                ? "bg-gray-100/70 text-slate-500 "
-                                : "text-red-400"
-                            } flex items-center justify-center`}
-                          >
-                            {" "}
-                            Villa
-                          </Link>
-                        )}
-                      </Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              to="/villa"
+                              aria-hidden="true"
+                              className={` w-full rounded-md py-2 ${
+                                active
+                                  ? "bg-gray-100/70 text-slate-500 "
+                                  : "text-red-400"
+                              } flex items-center justify-center`}
+                            >
+                              {" "}
+                              Villa
+                            </Link>
+                          )}
+                        </Menu.Item>
                       </div>
                     </Menu.Items>
                   </Transition>

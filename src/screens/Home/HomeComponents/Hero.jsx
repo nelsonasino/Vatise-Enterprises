@@ -10,7 +10,7 @@ const Hero = () => {
     >
       <img
         className="top-0 left-0 w-full h-full object-cover"
-        src="images/projectThree.jpg"
+        src="images/project-9.jpg"
         alt="hero-image"
       />
       <div className="bg-black/50 absolute top-0 left-0 w-full h-screen" />
