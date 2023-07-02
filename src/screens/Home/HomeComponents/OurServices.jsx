@@ -47,7 +47,7 @@ const OurServices = () => {
       >
         <img
           className="row-span-3 object-cover w-full h-full p-1"
-          src="images/design3.jpg"
+          src="images/design-3.jpg"
           alt="building-design"
         />
         <img

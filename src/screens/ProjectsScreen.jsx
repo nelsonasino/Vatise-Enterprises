@@ -86,7 +86,7 @@ const ProjectsScreen = () => {
             subtitle="This is another home construction fully planned, designed and managed with Vatise Company till completion."
           />
           <Project
-            title="Project 8"
+            title="Structural design"
             subtitle="Fully complete home construction planned, designed and managed with Vatise."
           />
           <Project

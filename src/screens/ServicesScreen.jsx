@@ -103,7 +103,7 @@ const ServicesScreen = () => {
         >
           <img
             className="rounded-sm md:w-[90%] w-full h-[90%]"
-            src="/images/structuraldesign.jpg"
+            src="/images/structural-design.jpg"
             alt="structural-design"
           />
         </motion.div>
