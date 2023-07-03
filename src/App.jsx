@@ -11,6 +11,7 @@ import ContactScreen from "./screens/ContactScreen";
 import Mansionette from "./screens/Mansionette";
 import Bungalow from "./screens/Bungalow";
 import Villa from "./screens/Villa";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -26,6 +27,7 @@ function App() {
 
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <NavBar isTopOfPage={isTopOfPage} />
       <Routes>
         <Route path="/" element={<Home />} />
