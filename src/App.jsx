@@ -12,6 +12,7 @@ import Mansionette from "./screens/Mansionette";
 import Bungalow from "./screens/Bungalow";
 import Villa from "./screens/Villa";
 import ScrollToTop from "./components/ScrollToTop";
+import Appartments from "./screens/Appartments";
 
 function App() {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
@@ -37,6 +38,7 @@ function App() {
         <Route path="/mansionette" element={<Mansionette />} />
         <Route path="/bungalow" element={<Bungalow />} />
         <Route path="/villa" element={<Villa />} />
+        <Route path="/appartments" element={<Appartments />} />
         <Route path="/contactus" element={<ContactScreen />} />
       </Routes>
       <Footer />

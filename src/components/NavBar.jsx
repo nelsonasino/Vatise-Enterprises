@@ -116,6 +116,22 @@ const NavBar = ({ isTopOfPage }) => {
                           </Link>
                         )}
                       </Menu.Item>
+                      <Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              to="/appartments"
+                              aria-hidden="true"
+                              className={` w-full rounded-md py-2 ${
+                                active
+                                  ? "bg-gray-100/70 text-slate-500 "
+                                  : "text-red-400"
+                              } flex items-center justify-center`}
+                            >
+                              {" "}
+                              Appartments
+                            </Link>
+                          )}
+                        </Menu.Item>
                     </div>
                   </Menu.Items>
                 </Transition>
@@ -261,7 +277,23 @@ const NavBar = ({ isTopOfPage }) => {
                               } flex items-center justify-center`}
                             >
                               {" "}
-                              Villa
+                              Villas
+                            </Link>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              to="/appartments"
+                              aria-hidden="true"
+                              className={` w-full rounded-md py-2 ${
+                                active
+                                  ? "bg-gray-100/70 text-slate-500 "
+                                  : "text-red-400"
+                              } flex items-center justify-center`}
+                            >
+                              {" "}
+                              Appartments
                             </Link>
                           )}
                         </Menu.Item>

@@ -1,4 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
+import VideoCard from "../components/VideoCard";
+import ImageCard from "../components/ImageCard";
+
+const container = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.2 },
+  },
+};
 
 const Mansionette = () => {
   return (
@@ -10,89 +20,121 @@ const Mansionette = () => {
         <p>3 bedroom</p>
       </div>
 
-      <div className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5">
-        <img
-          className="w-full h-full row-span-1 md:col-span-1 col-span-2 rounded-md"
-          src="/images/3 bedroom hidden roof.png"
-          alt="/"
+      <motion.div
+        className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
+        initial="hidden"
+        whileInView="visible"
+        variants={container}
+      >
+        <ImageCard
+          source={"/images/3 bedroom hidden roof.png"}
+          type={"House"}
+          bathrooms={2}
+          squareArea={"100m"}
         />
 
-        <video
-          className="w-full h-full md:row-span-2  row-span-1 col-span-2 rounded-md object-cover"
-          autoPlay={true}
-          loop={true}
-          src="/images/LUMION RENDER GROUP - Facebook.mp4"
-          alt="/"
+        <VideoCard
+          source={"/images/LUMION RENDER GROUP - Facebook.mp4"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
         />
 
-        <img
-          className="w-full h-full row-span-1 md:col-span-1 col-span-2 rounded-md "
-          src="/images/bungalow 3 bedroom - Picture1.png"
-          alt="/"
+        <ImageCard
+          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
         />
 
-        <img
-          className="w-full h-full row-span-1 col-span-2 rounded-md"
-          src="/images/TELFORD 3 BEDROOM - Picture1.png"
-          alt="/"
+        <ImageCard
+          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
         />
-      </div>
+      </motion.div>
 
       <div className="text-center py-10 px-8 rounded-full flex items-center justify-center">
         <p>4 bedroom</p>
       </div>
-      <div className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5">
-        <img
-          className="w-full h-full row-span-1 md:col-span-1 col-span-2 rounded-md"
-          src="/images/3 bedroom hidden roof.png"
-          alt="/"
+      <motion.div
+        className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
+        initial="hidden"
+        whileInView="visible"
+        variants={container}
+      >
+        <ImageCard
+          source={"/images/3 bedroom hidden roof.png"}
+          type={"House"}
+          bathrooms={2}
+          squareArea={"100m"}
         />
 
-        <img
-          className="w-full h-full row-span-1 md:col-span-1 col-span-2 rounded-md "
-          src="/images/bungalow 3 bedroom - Picture1.png"
-          alt="/"
+        <ImageCard
+          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
         />
 
-        <img
-          className="w-full h-full row-span-1 md:col-span-1 col-span-2 rounded-md"
-          src="/images/TELFORD 3 BEDROOM - Picture1.png"
-          alt="/"
+        <ImageCard
+          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
         />
-        <video
-          className="w-full h-full md:row-span-2  row-span-1 col-span-3 rounded-md object-cover"
-          autoPlay={true}
-          loop={true}
-          src="/images/LUMION RENDER GROUP - Facebook.mp4"
-          alt="/"
+        <VideoCard
+          source={"/images/LUMION RENDER GROUP - Facebook.mp4"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
         />
-      </div>
+        <ImageCard
+          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
+        />
+        <ImageCard
+          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
+        />
+      </motion.div>
 
       <div className="text-center py-10 px-8 rounded-full flex items-center justify-center">
         <p>5 bedroom</p>
       </div>
 
-      <div className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5">
-        <video
-          className="w-full h-full md:row-span-2  row-span-1 col-span-2 rounded-md object-cover"
-          autoPlay={true}
-          loop={true}
-          src="/images/LUMION RENDER GROUP - Facebook.mp4"
-          alt="/"
+      <motion.div
+        className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
+        initial="hidden"
+        whileInView="visible"
+        variants={container}
+      >
+        <VideoCard
+          source={"/images/LUMION RENDER GROUP - Facebook.mp4"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
         />
 
-        <img
-          className="w-full h-full row-span-1 md:col-span-1 col-span-2 rounded-md"
-          src="/images/3 bedroom hidden roof.png"
-          alt="/"
+        <ImageCard
+          source={"/images/3 bedroom hidden roof.png"}
+          type={"House"}
+          bathrooms={2}
+          squareArea={"100m"}
         />
 
-        <img
-          className="w-full h-full row-span-1 md:col-span-1 col-span-2 rounded-md "
-          src="/images/bungalow 3 bedroom - Picture1.png"
-          alt="/"
+        <ImageCard
+          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
