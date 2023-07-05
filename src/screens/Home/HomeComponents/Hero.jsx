@@ -29,7 +29,7 @@ const Hero = () => {
             Vatise Company
           </h1>
           <h1 className="mb-5 py-2 font-extrabold md:text-5xl text-3xl drop-shadow-2xl">
-            Making Dreams Come True.
+            Bring Your Dream Home To Life.
           </h1>
 
           <button

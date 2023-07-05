@@ -29,7 +29,7 @@ const AboutUs = () => {
           visible: { opacity: 1, x: 0 },
         }}
       >
-        <h1 className="font-bold md:text-4xl text-3xl mb-4">What Are We</h1>
+        <h1 className="font-bold md:text-4xl text-3xl mb-4">Who We Are</h1>
         <p>
           Vatise Enterprises is private limited company providing efficient and
           quality work in General Supplies and General Works
