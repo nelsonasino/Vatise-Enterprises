@@ -34,7 +34,7 @@ const Villa = () => {
         />
 
         <VideoCard
-          source={"/images/LUMION RENDER GROUP - Facebook.mp4"}
+          source={"/images/1bedroom.mp4"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}

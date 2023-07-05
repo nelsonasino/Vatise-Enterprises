@@ -35,7 +35,7 @@ const Bungalow = () => {
         />
 
         <VideoCard
-          source={"/images/LUMION RENDER GROUP - Facebook.mp4"}
+          source={"/images/1bdrm.mp4"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
@@ -80,9 +80,9 @@ const Bungalow = () => {
         />
 
         <VideoCard
-          source={"/images/LUMION RENDER GROUP - Facebook.mp4"}
+          source={"/images/2bdrm.mp4"}
           type={"House"}
-          bathrooms={1}
+          bathrooms={2}
           squareArea={"100m"}
         />
 
@@ -112,9 +112,9 @@ const Bungalow = () => {
         variants={container}
       >
         <VideoCard
-          source={"/images/LUMION RENDER GROUP - Facebook.mp4"}
+          source={"/images/3bdrm.mp4"}
           type={"House"}
-          bathrooms={1}
+          bathrooms={3}
           squareArea={"100m"}
         />
         <ImageCard
