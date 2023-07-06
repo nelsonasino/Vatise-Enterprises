@@ -113,9 +113,9 @@ const Bungalow = () => {
       >
         <VideoCard
           source={"/images/3bdrm.mp4"}
-          type={"House"}
+          type={"Bungalow"}
           bathrooms={3}
-          squareArea={"100m"}
+          squareArea={"400m"}
         />
         <ImageCard
           source={"/images/3 bedroom hidden roof.png"}

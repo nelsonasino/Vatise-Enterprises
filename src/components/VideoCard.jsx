@@ -6,12 +6,15 @@ const cardVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const VideoCard = ({ source, type, bathrooms, squareArea}) => {
+const VideoCard = ({ source, type, bathrooms, squareArea }) => {
   const overlayStyles = `absolute h-full w-full p-10 opacity-0 hover:opacity-90 
      transition duration-300 bg-black/70 z-30 flex flex-col justify-center items-center text-wheat`;
 
   return (
-    <motion.div variants={cardVariant} className="relative cursor-pointer w-full h-full md:row-span-2 row-span-1 col-span-2 rounded-md object-cover overflow-hidden ">
+    <motion.div
+      variants={cardVariant}
+      className="relative cursor-pointer w-full h-full md:row-span-2 row-span-1 col-span-2 rounded-md object-cover overflow-hidden "
+    >
       <div className={overlayStyles}>
         <p className="text-2xl">{type}</p>
         <p className="mt-2">livingroom</p>
@@ -23,12 +26,13 @@ const VideoCard = ({ source, type, bathrooms, squareArea}) => {
       </div>
 
       <video
+        className="w-full h-full object-cover"
+        controls={true}
         autoPlay={true}
         loop={true}
         src={source}
         alt="video"
       />
-
     </motion.div>
   );
 };

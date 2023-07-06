@@ -87,7 +87,7 @@ const NavBar = ({ isTopOfPage }) => {
                       <Menu.Item>
                         {({ active }) => (
                           <Link
-                            to="/mansionette"
+                            to="/maisonette"
                             aria-hidden="true"
                             className={` w-full rounded-md py-2 ${
                               active
@@ -96,7 +96,7 @@ const NavBar = ({ isTopOfPage }) => {
                             } flex items-center justify-center`}
                           >
                             {" "}
-                            Mansionette
+                            Maisonette
                           </Link>
                         )}
                       </Menu.Item>
@@ -252,7 +252,7 @@ const NavBar = ({ isTopOfPage }) => {
                         <Menu.Item>
                           {({ active }) => (
                             <Link
-                              to="/mansionette"
+                              to="/maisonette"
                               aria-hidden="true"
                               className={` w-full rounded-md py-2 ${
                                 active
@@ -261,7 +261,7 @@ const NavBar = ({ isTopOfPage }) => {
                               } flex items-center justify-center`}
                             >
                               {" "}
-                              Mansionette
+                              Maisonette
                             </Link>
                           )}
                         </Menu.Item>
