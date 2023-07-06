@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import ImageCard from "../components/ImageCard";
 import VideoCard from "../components/VideoCard";
+import { IoIosBed } from "react-icons/io"
 
 const container = {
   hidden: {},
@@ -17,9 +18,9 @@ const Bungalow = () => {
         Bungalow
       </h1>
 
-      <p className="text-slate-800 mb-5 py-3 px-8 bg-pink-200 rounded-xl">
-        1 bedroom
-      </p>
+      <div className="text-center font-semibold my-10 px-8 py-2 rounded-md flex items-center justify-center bg-orange-400 text-slate-800">
+        <p className="flex items-center justify-center gap-3"><IoIosBed/>1 bedroom</p>
+      </div>
 
       <motion.div
         className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
@@ -36,9 +37,6 @@ const Bungalow = () => {
 
         <VideoCard
           source={"/images/1bdrm.mp4"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
         />
 
         <ImageCard
@@ -63,8 +61,8 @@ const Bungalow = () => {
         />
       </motion.div>
 
-      <div className="text-center py-10 px-8 rounded-full flex items-center justify-center">
-        <p>2 bedroom</p>
+      <div className="text-center font-semibold my-10 px-8 py-2 rounded-md flex items-center justify-center bg-orange-400 text-slate-800">
+        <p className="flex items-center justify-center gap-3"><IoIosBed/>2 bedroom</p>
       </div>
       <motion.div
         className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
@@ -81,9 +79,6 @@ const Bungalow = () => {
 
         <VideoCard
           source={"/images/2bdrm.mp4"}
-          type={"House"}
-          bathrooms={2}
-          squareArea={"100m"}
         />
 
         <ImageCard
@@ -101,8 +96,8 @@ const Bungalow = () => {
         />
       </motion.div>
 
-      <div className="text-center py-10 px-8 rounded-full flex items-center justify-center">
-        <p>3 bedroom</p>
+      <div className="text-center font-semibold my-10 px-8 py-2 rounded-md flex items-center justify-center bg-orange-400 text-slate-800">
+        <p className="flex items-center justify-center gap-3"><IoIosBed/>3 bedroom</p>
       </div>
 
       <motion.div
@@ -113,9 +108,6 @@ const Bungalow = () => {
       >
         <VideoCard
           source={"/images/3bdrm.mp4"}
-          type={"Bungalow"}
-          bathrooms={3}
-          squareArea={"400m"}
         />
         <ImageCard
           source={"/images/3 bedroom hidden roof.png"}
