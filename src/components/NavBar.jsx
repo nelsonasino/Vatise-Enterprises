@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaTimes, FaBars } from "react-icons/fa";
-import { BiChevronDown } from "react-icons/bi";
-// import { MenuIcon } from "@heroicons/react/outline";
+import { BiChevronDown, BiChevronUp } from "react-icons/bi";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import { Menu, Transition, Popover } from "@headlessui/react";
@@ -45,9 +44,13 @@ const NavBar = ({ isTopOfPage }) => {
             Projects
           </Link>
 
-          <Popover className="relative">
+          <Popover className="relative" onMouseLeave={() => setIsOpen(false)}>
             {({ open }) => (
-              <Menu as="div" className="relative">
+              <Menu
+                as="div"
+                className="relative"
+                
+              >
                 <Popover.Button
                   className={`${
                     open ? "text-white" : "text-white"
@@ -55,7 +58,11 @@ const NavBar = ({ isTopOfPage }) => {
                   onMouseEnter={() => setIsOpen(true)}
                 >
                   Concepts
-                  <BiChevronDown size={24} className="ml-[1px]" />
+                  {open ? (
+                    <BiChevronUp size={24} className="ml-[1px]" />
+                  ) : (
+                    <BiChevronDown size={24} className="ml-[1px]" />
+                  )}
                   {/* <MenuIcon className="w-5 h-5 ml-2 -mr-1" aria-hidden="true" /> */}
                 </Popover.Button>
 
@@ -78,6 +85,7 @@ const NavBar = ({ isTopOfPage }) => {
                       <Menu.Items
                         className="w-40 rounded-md shadow-lg bg-white origin-top-right focus:outline-none absolute"
                         static
+                        onMouseEnter={() => setIsOpen(true)}
                       >
                         <div className="p-2 flex flex-col text-sm items-start justify-center gap-1">
                           {" "}
@@ -221,114 +229,109 @@ const NavBar = ({ isTopOfPage }) => {
               {" "}
               Projects
             </Link>
-            <Popover className="relative">
+
+            <Menu as="div" className="relative">
               {({ open }) => (
-                <Menu as="div" className="relative">
-                  <Popover.Button
+                <Fragment>
+                  <Menu.Button
                     className={`${
-                      open ? "text-white" : "text-white"
-                    } group hover:text-orange-500 inline-flex items-center justify-center focus:outline-none`}
-                    onMouseEnter={() => setIsOpen(true)}
+                      open ? "text-orange-500" : "text-white"
+                    } mb-1 hover:text-orange-500 inline-flex items-center justify-center focus:outline-none`}
                   >
                     Concepts
-                    <BiChevronDown size={24} className="ml-[1px]" />
-                    {/* <MenuIcon className="w-5 h-5 ml-2 -mr-1" aria-hidden="true" /> */}
-                  </Popover.Button>
+                    {open ? (
+                      <BiChevronUp size={24} className="ml-[1px]" />
+                    ) : (
+                      <BiChevronDown size={24} className="ml-[1px]" />
+                    )}
+                  </Menu.Button>
 
                   <Transition
-                    show={isOpen}
-                    as={React.Fragment}
+                    show={open}
                     enter="transition ease-out duration-200"
                     enterFrom="opacity-0 translate-y-1"
                     enterTo="opacity-100 translate-y-0"
                     leave="transition ease-in duration-150"
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
-                    onMouseLeave={() => setIsOpen(false)}
                   >
-                    <Popover.Panel
+                    <Menu.Items
+                      className="w-40 rounded-md shadow-lg bg-white origin-top-right focus:outline-none absolute"
                       static
-                      className="absolute z-10 w-screen max-w-xs px-4 mt-3 transform -translate-x-1/2 left-1/2 sm:px-0"
                     >
-                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <Menu.Items
-                          className="w-40 rounded-md shadow-lg bg-white origin-top-right focus:outline-none absolute"
-                          static
-                        >
-                          <div className="p-2 flex flex-col text-sm items-start justify-center gap-1">
-                            {" "}
-                            <Menu.Item>
-                              {({ active }) => (
-                                <Link
-                                  to="/bungalow"
-                                  aria-hidden="true"
-                                  className={` w-full rounded-md py-2 ${
-                                    active
-                                      ? "bg-gray-100/70 text-darkBlue "
-                                      : "text-red-400"
-                                  } flex items-center justify-center`}
-                                >
-                                  {" "}
-                                  Bungalow
-                                </Link>
-                              )}
-                            </Menu.Item>
-                            <Menu.Item>
-                              {({ active }) => (
-                                <Link
-                                  to="/maisonette"
-                                  aria-hidden="true"
-                                  className={` w-full rounded-md py-2 ${
-                                    active
-                                      ? "bg-gray-100/70 text-darkBlue "
-                                      : "text-red-400"
-                                  } flex items-center justify-center`}
-                                >
-                                  {" "}
-                                  Maisonette
-                                </Link>
-                              )}
-                            </Menu.Item>
-                            <Menu.Item>
-                              {({ active }) => (
-                                <Link
-                                  to="/villa"
-                                  aria-hidden="true"
-                                  className={` w-full rounded-md py-2 ${
-                                    active
-                                      ? "bg-gray-100/70 text-darkBlue"
-                                      : "text-red-400"
-                                  } flex items-center justify-center`}
-                                >
-                                  {" "}
-                                  Villas
-                                </Link>
-                              )}
-                            </Menu.Item>
-                            <Menu.Item>
-                              {({ active }) => (
-                                <Link
-                                  to="/appartments"
-                                  aria-hidden="true"
-                                  className={` w-full rounded-md py-2 ${
-                                    active
-                                      ? "bg-gray-100/70 text-darkBlue "
-                                      : "text-red-400"
-                                  } flex items-center justify-center`}
-                                >
-                                  {" "}
-                                  Appartments
-                                </Link>
-                              )}
-                            </Menu.Item>
-                          </div>
-                        </Menu.Items>
+                      <div className="p-2 flex flex-col text-sm items-start justify-center gap-1">
+                        {" "}
+                        <Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              to="/bungalow"
+                              aria-hidden="true"
+                              className={` w-full rounded-md py-2 ${
+                                active
+                                  ? "bg-gray-100/70 text-orange-500  "
+                                  : "text-darkBlue"
+                              } flex items-center justify-center`}
+                            >
+                              {" "}
+                              Bungalow
+                            </Link>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              to="/maisonette"
+                              aria-hidden="true"
+                              className={` w-full rounded-md py-2 ${
+                                active
+                                  ? "bg-gray-100/70 text-orange-500  "
+                                  : "text-darkBlue"
+                              } flex items-center justify-center`}
+                            >
+                              {" "}
+                              Maisonette
+                            </Link>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              to="/villa"
+                              aria-hidden="true"
+                              className={` w-full rounded-md py-2 ${
+                                active
+                                  ? "bg-gray-100/70 text-orange-500  "
+                                  : "text-darkBlue"
+                              } flex items-center justify-center`}
+                            >
+                              {" "}
+                              Villas
+                            </Link>
+                          )}
+                        </Menu.Item>
+                        <Menu.Item>
+                          {({ active }) => (
+                            <Link
+                              to="/appartments"
+                              aria-hidden="true"
+                              className={` w-full rounded-md py-2 ${
+                                active
+                                  ? "bg-gray-100/70 text-orange-500  "
+                                  : "text-darkBlue"
+                              } flex items-center justify-center`}
+                            >
+                              {" "}
+                              Appartments
+                            </Link>
+                          )}
+                        </Menu.Item>
                       </div>
-                    </Popover.Panel>
+                    </Menu.Items>
                   </Transition>
-                </Menu>
+                </Fragment>
               )}
-            </Popover>
+            </Menu>
+
             <Link
               to="/contactus"
               className="bg-orange-500 hover:bg-orange-500/80 font-medium py-2 px-4 rounded-sm mt-20"
