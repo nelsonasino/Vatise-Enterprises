@@ -46,11 +46,7 @@ const NavBar = ({ isTopOfPage }) => {
 
           <Popover className="relative" onMouseLeave={() => setIsOpen(false)}>
             {({ open }) => (
-              <Menu
-                as="div"
-                className="relative"
-                
-              >
+              <Menu as="div" className="relative">
                 <Popover.Button
                   className={`${
                     open ? "text-white" : "text-white"
