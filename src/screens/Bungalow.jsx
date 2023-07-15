@@ -19,51 +19,9 @@ const Bungalow = () => {
       </h1>
 
       <div className="text-center font-semibold my-10 px-8 py-2 rounded-md flex items-center justify-center bg-orange-400 text-slate-800">
-        <p className="flex items-center justify-center gap-3"><IoIosBed/>1 bedroom</p>
-      </div>
-
-      <motion.div
-        className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
-        initial="hidden"
-        whileInView="visible"
-        variants={container}
-      >
-        <ImageCard
-          source={"/images/3 bedroom hidden roof.png"}
-          type={"House"}
-          bathrooms={2}
-          squareArea={"100m"}
-        />
-
-        <VideoCard
-          source={"/images/1bdrm.mp4"}
-        />
-
-        <ImageCard
-          source={"/images/bungalow 3 bedroom - Picture1.png"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
-        />
-
-        <ImageCard
-          source={"/images/bungalow 3 bedroom - Picture1.png"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
-        />
-
-        <ImageCard
-          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
-        />
-      </motion.div>
-
-      <div className="text-center font-semibold my-10 px-8 py-2 rounded-md flex items-center justify-center bg-orange-400 text-slate-800">
         <p className="flex items-center justify-center gap-3"><IoIosBed/>2 bedroom</p>
       </div>
+
       <motion.div
         className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
         initial="hidden"
@@ -78,7 +36,14 @@ const Bungalow = () => {
         />
 
         <VideoCard
-          source={"/images/2bdrm.mp4"}
+          source={"/images/2bdrmbungalow.mp4"}
+        />
+
+        <ImageCard
+          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
         />
 
         <ImageCard
@@ -107,7 +72,70 @@ const Bungalow = () => {
         variants={container}
       >
         <VideoCard
-          source={"/images/3bdrm.mp4"}
+          source={"/images/3bdrmbungalow1.mp4"}
+        />
+        <ImageCard
+          source={"/images/3 bedroom hidden roof.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
+        />
+
+        <ImageCard
+          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
+        />
+      </motion.div>
+
+      <div className="text-center font-semibold my-10 px-8 py-2 rounded-md flex items-center justify-center bg-orange-400 text-slate-800">
+        <p className="flex items-center justify-center gap-3"><IoIosBed/>3 bedroom</p>
+      </div>
+      <motion.div
+        className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
+        initial="hidden"
+        whileInView="visible"
+        variants={container}
+      >
+        <ImageCard
+          source={"/images/3 bedroom hidden roof.png"}
+          type={"House"}
+          bathrooms={2}
+          squareArea={"100m"}
+        />
+
+        <VideoCard
+          source={"/images/3bdrmbungalow2.mp4"}
+        />
+
+        <ImageCard
+          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
+        />
+
+        <ImageCard
+          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
+          type={"House"}
+          bathrooms={1}
+          squareArea={"100m"}
+        />
+      </motion.div>
+
+      <div className="text-center font-semibold my-10 px-8 py-2 rounded-md flex items-center justify-center bg-orange-400 text-slate-800">
+        <p className="flex items-center justify-center gap-3"><IoIosBed/>3 bedroom</p>
+      </div>
+
+      <motion.div
+        className="w-full mb-8 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
+        initial="hidden"
+        whileInView="visible"
+        variants={container}
+      >
+        <VideoCard
+          source={"/images/3bdrmbungalow3.mp4"}
         />
         <ImageCard
           source={"/images/3 bedroom hidden roof.png"}

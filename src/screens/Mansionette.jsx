@@ -35,7 +35,7 @@ const Mansionette = () => {
         />
 
         <VideoCard
-          source={"/images/LUMION RENDER GROUP - Facebook.mp4"}
+          source={"/images/3bdrmbungalow1.mp4"}
         />
 
         <ImageCard
@@ -83,7 +83,7 @@ const Mansionette = () => {
           squareArea={"100m"}
         />
         <VideoCard
-          source={"/images/LUMION RENDER GROUP - Facebook.mp4"}
+          source={"/images/3bdrmbungalow1.mp4"}
         />
         <ImageCard
           source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
@@ -110,7 +110,7 @@ const Mansionette = () => {
         variants={container}
       >
         <VideoCard
-          source={"/images/LUMION RENDER GROUP - Facebook.mp4"}
+          source={"/images/3bdrmbungalow1.mp4"}
         />
 
         <ImageCard
