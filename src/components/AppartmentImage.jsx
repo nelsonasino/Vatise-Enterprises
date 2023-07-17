@@ -9,7 +9,7 @@ const AppartmentImage = ({ source, bedrooms }) => {
   return (
     <div
       variants={cardVariant}
-      className="relative cursor-pointer w-full h-full row-span-2 md:col-span-1 col-span-2 
+      className="relative cursor-pointer w-full h-full md:row-span-2 row-span-1 md:col-span-1 col-span-2 
       rounded-md overflow-hidden "
     >
       <div

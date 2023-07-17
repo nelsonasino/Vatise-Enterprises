@@ -19,7 +19,7 @@ const Appartments = () => {
       </h1>
 
       <motion.div
-        className="w-full mb-10 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
+        className="w-full mb-10 md:mt-0 mt-7 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-2"
         initial="hidden"
         whileInView="visible"
         variants={container}
@@ -52,7 +52,7 @@ const Appartments = () => {
       </motion.div>
 
       <motion.div
-        className="w-full my-10 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
+        className="w-full my-10 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-2"
         initial="hidden"
         whileInView="visible"
         variants={container}
@@ -85,7 +85,7 @@ const Appartments = () => {
       </motion.div>
 
       <motion.div
-        className="w-full my-10 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-5"
+        className="w-full my-10 grid md:max-h-[100vh] md:grid-cols-3 grid-cols-2 md:grid-rows-3 grid-rows-4 gap-2"
         initial="hidden"
         whileInView="visible"
         variants={container}
