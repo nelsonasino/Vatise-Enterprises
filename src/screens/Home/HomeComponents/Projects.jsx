@@ -17,23 +17,27 @@ const Projects = () => {
         }}
       >
         <img
+          loading="lazy"
           className="row-span-2 object-cover w-full h-full p-1 cursor-pointer"
           src="images/project-3.jpg"
           alt="project-4"
         />
 
         <img
+          loading="lazy"
           className="row-span-3 object-cover w-full h-full p-1"
           src="images/project-1.jpg"
           alt="project-1"
         />
         <img
+          loading="lazy"
           className="row-span-2 object-cover w-full h-full p-1"
           src="images/project-5.jpg"
           alt="project-2"
         />
 
         <img
+          loading="lazy"
           className="row-span-1 object-cover w-full h-full p-1"
           src="images/project-6.jpg"
           alt="project-3"

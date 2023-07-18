@@ -52,6 +52,7 @@ const ServicesScreen = () => {
           }}
         >
           <img
+            loading="lazy"
             className="rounded-sm md:w-[90%] w-full h-[90%]"
             src="/images/plan.jpg"
             alt="architecture-plan"
@@ -102,6 +103,7 @@ const ServicesScreen = () => {
           }}
         >
           <img
+            loading="lazy"
             className="rounded-sm md:w-[90%] w-full h-[90%]"
             src="/images/structural-design.jpg"
             alt="structural-design"
@@ -155,6 +157,7 @@ const ServicesScreen = () => {
           }}
         >
           <img
+            loading="lazy"
             className="rounded-sm md:w-[90%] w-full h-[90%]"
             src="/images/billofquantities.jpg"
             alt="bill-of-quantities"
@@ -200,6 +203,7 @@ const ServicesScreen = () => {
           }}
         >
           <img
+            loading="lazy"
             className="rounded-sm md:w-[90%] w-full h-[90%] "
             src="/images/constructionmanagement.jpg"
             alt="construction-management"
@@ -252,6 +256,7 @@ const ServicesScreen = () => {
           }}
         >
           <img
+            loading="lazy"
             className="rounded-sm md:w-[90%] w-full h-[90%]"
             src="/images/constructionconsultation.jpg"
             alt="construction-consultation"

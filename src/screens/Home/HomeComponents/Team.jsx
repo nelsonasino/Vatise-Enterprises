@@ -2,8 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const team = [
-  { url: "/images/danson-mutiso.jpg", name: "Eng. Danson Mutiso", designation: "Director", experience: "4 yrs" },
-  { url: "/images/paul.jpg", name: "Paul Kiarie", designation: "Engineer", experience: "4 yrs" }
+  {
+    url: "/images/danson-mutiso.jpg",
+    name: "Eng. Danson Mutiso",
+    designation: "Director",
+    experience: "4 yrs",
+  },
+  {
+    url: "/images/paul.jpg",
+    name: "Paul Kiarie",
+    designation: "Engineer",
+    experience: "4 yrs",
+  },
 ];
 
 const Team = () => {
@@ -24,9 +34,7 @@ const Team = () => {
         <p>Our team of highly skilled key personnel.</p>
       </motion.div>
 
-      <div
-        className="flex md:flex-row flex-col justify-center items-center py-10 md:gap-10 gap-6"
-      >
+      <div className="flex md:flex-row flex-col justify-center items-center py-10 md:gap-10 gap-6">
         {team.map((member) => {
           return (
             <motion.div
@@ -40,7 +48,12 @@ const Team = () => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <img className="w-[100%] h-[70%] top-0" src={member.url} alt={member.name} />
+              <img
+                loading="lazy"
+                className="w-[100%] h-[70%] top-0"
+                src={member.url}
+                alt={member.name}
+              />
               <h1 className="text-md mb-1 mt-4">{member.name}</h1>
               <p className="text-gray-400 mb-1">{member.designation}</p>
               <p className="text-sm">Experience: {member.experience}</p>
@@ -48,21 +61,6 @@ const Team = () => {
           );
         })}
       </div>
-
-      {/* 
-      <BsChevronCompactLeft
-        size={30}
-        className="absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full
-         p-2 group-hover:bg-white/20 text-white cursor-pointer"
-      />
-
-      
-      <BsChevronCompactRight
-        size={30}
-        className="absolute top-[50%] -translate-x-0 translate-y-[50%] right-5 text-2xl rounded-full 
-        p-2 group-hover:bg-white/20 text-white cursor-pointer"
-      /> 
-      */}
     </div>
   );
 };

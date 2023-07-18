@@ -23,6 +23,7 @@ const AppartmentImage = ({ source, bedrooms }) => {
       </div>
 
       <img
+        loading="lazy"
         className="w-full h-full object-cover transform transition-all hover:scale-110 duration-500"
         src={source}
         alt="image"
@@ -32,5 +33,3 @@ const AppartmentImage = ({ source, bedrooms }) => {
 };
 
 export default AppartmentImage;
-
-

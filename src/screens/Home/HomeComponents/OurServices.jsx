@@ -46,26 +46,31 @@ const OurServices = () => {
         }}
       >
         <img
+          loading="lazy"
           className="row-span-3 object-cover w-full h-full p-1"
           src="images/design-3.jpg"
           alt="building-design"
         />
         <img
+          loading="lazy"
           className="row-span-2 object-cover w-full h-full p-1"
           src="images/design5.jpg"
           alt="dam-design"
         />
         <img
+          loading="lazy"
           className="row-span-2 object-cover w-full h-full p-1"
           src="images/design7.jpg"
           alt="road-design"
         />
         <img
+          loading="lazy"
           className="row-span-3 object-cover w-full h-full p-1 shadow-sm"
           src="images/constructionconsultation.jpg"
           alt="construction-consultation"
         />
         <img
+          loading="lazy"
           className="row-span-2 object-cover w-full h-full p-1"
           src="images/tap1.jpg"
           alt="modern-tap-delivery"
