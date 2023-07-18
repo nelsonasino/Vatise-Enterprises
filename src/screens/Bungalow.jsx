@@ -34,14 +34,14 @@ const Bungalow = () => {
         />
 
         <ImageCard
-          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          source={"/images/bungalow1.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
         />
 
         <ImageCard
-          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          source={"/images/bungalow2.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
@@ -63,14 +63,14 @@ const Bungalow = () => {
           source={"/images/3bdrmbungalow1.mp4"}
         />
         <ImageCard
-          source={"/images/3 bedroom hidden roof.png"}
+          source={"/images/bungalow3.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
         />
 
         <ImageCard
-          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
+          source={"/images/bungalow4.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
@@ -87,7 +87,7 @@ const Bungalow = () => {
         variants={container}
       >
         <ImageCard
-          source={"/images/3 bedroom hidden roof.png"}
+          source={"/images/bungalow5.jpg"}
           type={"House"}
           bathrooms={2}
           squareArea={"100m"}
@@ -98,14 +98,14 @@ const Bungalow = () => {
         />
 
         <ImageCard
-          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          source={"/images/bungalow6.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
         />
 
         <ImageCard
-          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
+          source={"/images/bungalow7.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
@@ -126,14 +126,14 @@ const Bungalow = () => {
           source={"/images/3bdrmbungalow3.mp4"}
         />
         <ImageCard
-          source={"/images/3 bedroom hidden roof.png"}
+          source={"/images/bungalow8.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
         />
 
         <ImageCard
-          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
+          source={"/images/bungalow9.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}

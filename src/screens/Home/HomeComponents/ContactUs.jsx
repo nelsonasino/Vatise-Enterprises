@@ -49,9 +49,9 @@ const ContactUs = () => {
         >
           <div
             className="md:p-20 p-10 rounded-2xl bg-white/10 backdrop-filter backdrop-blur-lg shadow-lg
-           flex flex-col justify-between text-base items-center h-[80%] w-[90%]"
+           flex flex-col justify-center text-base items-center h-[80%] w-[90%]"
           >
-            <div className="font-medium text-white flex flex-col justify-center md:items-start items-center px-auto">
+            <div className="font-medium text-white flex flex-col justify-center items-start px-auto">
               <div className="flex mt-1">
                 <CiPhone size={24} />
                 <p className="mx-4">+254 710 482 700</p>

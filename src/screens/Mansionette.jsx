@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import VideoCard from "../components/VideoCard";
 import ImageCard from "../components/ImageCard";
 import { IoIosBed } from "react-icons/io";
+import AppartmentImage from "../components/AppartmentImage";
 
 const container = {
   hidden: {},
@@ -33,14 +34,14 @@ const Mansionette = () => {
         <VideoCard source={"/images/2bdrmmaisonette.mp4"} />
 
         <ImageCard
-          source={"/images/3 bedroom hidden roof.png"}
+          source={"/images/maisonette1.jpg"}
           type={"House"}
           bathrooms={2}
           squareArea={"100m"}
         />
 
         <ImageCard
-          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          source={"/images/maisonette2.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
@@ -60,7 +61,7 @@ const Mansionette = () => {
         variants={container}
       >
         <ImageCard
-          source={"/images/3 bedroom hidden roof.png"}
+          source={"/images/maisonette3.jpg"}
           type={"House"}
           bathrooms={2}
           squareArea={"100m"}
@@ -69,12 +70,11 @@ const Mansionette = () => {
         <VideoCard source={"/images/3bdrmmaisonette1.mp4"} />
 
         <ImageCard
-          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          source={"/images/maisonette4.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
         />
-
       </motion.div>
 
       <div className="text-center font-semibold my-10 px-8 py-2 rounded-md flex items-center justify-center bg-orange-400 text-slate-800">
@@ -89,34 +89,29 @@ const Mansionette = () => {
         variants={container}
       >
         <ImageCard
-          source={"/images/3 bedroom hidden roof.png"}
+          source={"/images/maisonette5.jpg"}
           type={"House"}
           bathrooms={2}
           squareArea={"100m"}
         />
 
         <ImageCard
-          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          source={"/images/maisonette6.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
         />
 
-        <ImageCard
-          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
+        <AppartmentImage
+          source={"/images/maisonette8.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
         />
         <VideoCard source={"/images/4bdrmmaisonette.mp4"} />
+
         <ImageCard
-          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
-        />
-        <ImageCard
-          source={"/images/TELFORD 3 BEDROOM - Picture1.png"}
+          source={"/images/maisonette7.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
@@ -138,14 +133,14 @@ const Mansionette = () => {
         <VideoCard source={"/images/5bdrmmaisonette.mp4"} />
 
         <ImageCard
-          source={"/images/3 bedroom hidden roof.png"}
+          source={"/images/maisonette9.jpg"}
           type={"House"}
           bathrooms={2}
           squareArea={"100m"}
         />
 
         <ImageCard
-          source={"/images/bungalow 3 bedroom - Picture1.png"}
+          source={"/images/maisonette10.jpg"}
           type={"House"}
           bathrooms={1}
           squareArea={"100m"}
