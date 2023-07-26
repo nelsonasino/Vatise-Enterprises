@@ -17,12 +17,12 @@ const ImageCard = ({ source, type, bedrooms, squareArea, other, size }) => {
          bg-black/70 z-30 inset-0 flex flex-col justify-center items-center text-center text-wheat"
       >
         <p className="text-2xl">{type}</p>
-        <p className="mt-2">bedrooms : {bedrooms} </p>
-        <p className="mt-2">kitchen</p>
-        <p className="mt-2">lounge</p>
-        <p className="mt-2">{other}</p>
-        <p className="mt-2">Size : {size}</p>
-        <p className="mt-2">Sqm : {squareArea}</p>
+        <p className="md:mt-2 mt-1">bedrooms : {bedrooms} </p>
+        <p className="md:mt-2 mt-1">kitchen</p>
+        <p className="md:mt-2 mt-1">lounge</p>
+        <p className="md:mt-2 mt-1">{other}</p>
+        <p className="md:mt-2 mt-1">Size : {size}</p>
+        <p className="md:mt-2 mt-1">Sqm : {squareArea}</p>
         
       </div>
 
