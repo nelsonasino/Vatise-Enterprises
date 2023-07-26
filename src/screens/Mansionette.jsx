@@ -35,16 +35,20 @@ const Mansionette = () => {
 
         <ImageCard
           source={"/images/maisonette1.jpg"}
-          type={"House"}
-          bathrooms={2}
-          squareArea={"100m"}
+          type={"8-corner house design"}
+          bedrooms={2}
+          squareArea={"102"}
+          size={"11m x 11m"}
+          other={"Rooftop entertainment area"}
         />
 
         <ImageCard
           source={"/images/maisonette2.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"8-corner house design"}
+          bedrooms={2}
+          squareArea={"102"}
+          size={"11m x 11m"}
+          other={"Rooftop entertainment area"}
         />
       </motion.div>
 
@@ -62,18 +66,22 @@ const Mansionette = () => {
       >
         <ImageCard
           source={"/images/maisonette3.jpg"}
-          type={"House"}
-          bathrooms={2}
-          squareArea={"100m"}
+          type={"Modern small house"}
+          bedrooms={3}
+          squareArea={"148"}
+          size={"13.5m x 11.8m"}
+          other={"2 car open garage"}
         />
 
         <VideoCard source={"/images/3bdrmmaisonette1.mp4"} />
 
         <ImageCard
           source={"/images/maisonette4.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Modern small house"}
+          bedrooms={3}
+          squareArea={"148"}
+          size={"13.5m x 11.8m"}
+          other={"2 car open garage"}
         />
       </motion.div>
 
@@ -90,31 +98,35 @@ const Mansionette = () => {
       >
         <ImageCard
           source={"/images/maisonette5.jpg"}
-          type={"House"}
-          bathrooms={2}
-          squareArea={"100m"}
+          type={"Double storey design"}
+          bedrooms={4}
+          squareArea={"229"}
+          size={"17m x 18.9m"}
+          other={"Double garage"}
         />
 
         <ImageCard
           source={"/images/maisonette6.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Double storey design"}
+          bedrooms={4}
+          squareArea={"229"}
+          size={"17m x 18.9m"}
+          other={"Bar area"}
         />
 
         <AppartmentImage
           source={"/images/maisonette8.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Double storey design"}
         />
         <VideoCard source={"/images/4bdrmmaisonette.mp4"} />
 
         <ImageCard
           source={"/images/maisonette7.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Double storey design"}
+          bedrooms={4}
+          squareArea={"229"}
+          size={"17m x 18.9m"}
+          other={"Double garage"}
         />
       </motion.div>
 
@@ -134,16 +146,20 @@ const Mansionette = () => {
 
         <ImageCard
           source={"/images/maisonette9.jpg"}
-          type={"House"}
-          bathrooms={2}
-          squareArea={"100m"}
+          type={"Double storey design"}
+          bedrooms={5}
+          squareArea={"338"}
+          size={""}
+          other={"Double garage"}
         />
 
         <ImageCard
           source={"/images/maisonette10.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Double storey design"}
+          bedrooms={5}
+          squareArea={"338"}
+          size={""}
+          other={"Double garage"}
         />
       </motion.div>
     </div>

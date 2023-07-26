@@ -5,7 +5,7 @@ const cardVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const ImageCard = ({ source, type, bathrooms, squareArea }) => {
+const ImageCard = ({ source, type, bedrooms, squareArea, other, size }) => {
   return (
     <div
       variants={cardVariant}
@@ -17,12 +17,13 @@ const ImageCard = ({ source, type, bathrooms, squareArea }) => {
          bg-black/70 z-30 inset-0 flex flex-col justify-center items-center text-center text-wheat"
       >
         <p className="text-2xl">{type}</p>
-        <p className="mt-2">livingroom</p>
-        <p className="mt-2">dining room</p>
-        <p className="mt-2">bathrooms : {bathrooms} </p>
+        <p className="mt-2">bedrooms : {bedrooms} </p>
         <p className="mt-2">kitchen</p>
-        <p className="mt-2">study</p>
-        <p className="mt-2">SqrArea : {squareArea}</p>
+        <p className="mt-2">lounge</p>
+        <p className="mt-2">{other}</p>
+        <p className="mt-2">Size : {size}</p>
+        <p className="mt-2">Sqm : {squareArea}</p>
+        
       </div>
 
       <img

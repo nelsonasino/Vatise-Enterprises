@@ -35,16 +35,18 @@ const Bungalow = () => {
 
         <ImageCard
           source={"/images/bungalow1.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Roundavel design"}
+          bedrooms={3}
+          squareArea={"102"}
+          size={"11m x 11m"}
         />
 
         <ImageCard
           source={"/images/bungalow2.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Roundavel design"}
+          bedrooms={3}
+          squareArea={"102"}
+          size={"11m x 11m"}
         />
 
       </motion.div>
@@ -64,16 +66,20 @@ const Bungalow = () => {
         />
         <ImageCard
           source={"/images/bungalow3.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Tuscan roof design"}
+          bathrooms={3}
+          squareArea={"260"}
+          other={"Double garage"}
+          size={"16.9m x 16.7m"}
         />
 
         <ImageCard
           source={"/images/bungalow4.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Tuscan roof design"}
+          bathrooms={3}
+          squareArea={"260"}
+          other={"Double garage"}
+          size={"16.9m x 16.7m"}
         />
       </motion.div>
 
@@ -88,9 +94,11 @@ const Bungalow = () => {
       >
         <ImageCard
           source={"/images/bungalow5.jpg"}
-          type={"House"}
-          bathrooms={2}
-          squareArea={"100m"}
+          type={"Butterfly roof"}
+          bedrooms={3}
+          squareArea={"261"}
+          other={"Double garage"}
+          size={"19m x 17m"}
         />
 
         <VideoCard
@@ -99,16 +107,20 @@ const Bungalow = () => {
 
         <ImageCard
           source={"/images/bungalow6.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Butterfly roof"}
+          bedrooms={3}
+          squareArea={"261"}
+          other={"Double garage"}
+          size={"19m x 17m"}
         />
 
         <ImageCard
           source={"/images/bungalow7.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Butterfly roof"}
+          bedrooms={3}
+          squareArea={"261"}
+          other={"Double garage"}
+          size={"19m x 17m"}
         />
       </motion.div>
 
@@ -127,16 +139,20 @@ const Bungalow = () => {
         />
         <ImageCard
           source={"/images/bungalow8.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Roundavel design"}
+          bedrooms={3}
+          squareArea={"234"}
+          other={"Double garage"}
+          size={""}
         />
 
         <ImageCard
           source={"/images/bungalow9.jpg"}
-          type={"House"}
-          bathrooms={1}
-          squareArea={"100m"}
+          type={"Roundavel design"}
+          bedrooms={3}
+          squareArea={"234"}
+          other={"Double garage"}
+          size={""}
         />
       </motion.div>
     </div>
