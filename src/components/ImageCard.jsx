@@ -13,16 +13,16 @@ const ImageCard = ({ source, type, bedrooms, squareArea, other, size }) => {
       rounded-md overflow-hidden "
     >
       <div
-        className="absolute h-full w-full p-10 opacity-0 hover:opacity-90  transform transition-all duration-500
+        className="absolute h-full w-full opacity-0 hover:opacity-90  transform transition-all duration-500
          bg-black/70 z-30 inset-0 flex flex-col justify-center items-center text-center text-wheat"
       >
         <p className="text-2xl">{type}</p>
-        <p className="md:mt-2 mt-1">bedrooms : {bedrooms} </p>
-        <p className="md:mt-2 mt-1">kitchen</p>
-        <p className="md:mt-2 mt-1">lounge</p>
-        <p className="md:mt-2 mt-1">{other}</p>
-        <p className="md:mt-2 mt-1">Size : {size}</p>
-        <p className="md:mt-2 mt-1">Sqm : {squareArea}</p>
+        <p className="md:mt-1 mt-0">bedrooms : {bedrooms} </p>
+        <p className="md:mt-1 mt-0">kitchen</p>
+        <p className="md:mt-1 mt-0">lounge</p>
+        <p className="md:mt-1 mt-0">{other}</p>
+        <p className="md:mt-1 mt-0">Size : {size}</p>
+        <p className="md:mt-1 mt-0">Sqm : {squareArea}</p>
         
       </div>
 
